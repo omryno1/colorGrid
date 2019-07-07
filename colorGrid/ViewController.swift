@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         return false
     }
     
-    func handlePan(gesture : UIPanGestureRecognizer){
+    @objc func handlePan(gesture : UIPanGestureRecognizer){
         let location = gesture.location(in: view)
         
         let i = Int(location.x) / cellSize
